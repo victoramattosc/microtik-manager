@@ -26,13 +26,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gradient-to-br from-neutral-100 to-neutral-200">
       <Sidebar
         currentPage={currentPage}
         setCurrentPage={(page: Page) => setCurrentPage(page)}
       />
       <div className="flex-1 flex flex-col">
-        <header className="bg-white shadow-sm border-b px-6 py-4">
+        <header className="bg-white/70 backdrop-blur-md shadow-sm border-b px-8 py-4">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-gray-800">
               {currentPage === 'dashboard' && 'Dashboard Nacional'}
@@ -51,7 +51,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </header>
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto p-6">
           {renderCurrentPage()}
         </main>
       </div>

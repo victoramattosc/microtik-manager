@@ -40,21 +40,21 @@ const UsersPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto p-6 space-y-8">
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Usuários Conectados</h1>
         <p className="text-gray-600">Monitoramento em tempo real de dispositivos na rede</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Total Conectados</h3>
             <Users className="w-6 h-6 text-blue-500" />
           </div>
           <div className="text-3xl font-bold text-blue-500">{users.length}</div>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Autorizados</h3>
             <CheckCircle className="w-6 h-6 text-green-500" />
@@ -63,7 +63,7 @@ const UsersPage: React.FC = () => {
             {users.filter(u => u.authorized).length}
           </div>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Intrusos</h3>
             <Shield className="w-6 h-6 text-red-500" />
@@ -72,7 +72,7 @@ const UsersPage: React.FC = () => {
             {users.filter(u => !u.authorized).length}
           </div>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Tráfego Total</h3>
             <Activity className="w-6 h-6 text-purple-500" />
@@ -83,7 +83,7 @@ const UsersPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border">
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200">
         <div className="p-6 border-b flex items-center justify-between">
           <h2 className="text-xl font-semibold">Dispositivos Ativos</h2>
           <div className="flex items-center space-x-2">

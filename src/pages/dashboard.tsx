@@ -41,14 +41,14 @@ const Dashboard: React.FC = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
 
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto p-6 space-y-8">
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Status das Operadoras - Brasil</h1>
         <p className="text-gray-600">Monitoramento em tempo real das principais operadoras por estado</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Status Geral</h3>
             <CheckCircle className="w-6 h-6 text-green-500" />
@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
           <div className="text-3xl font-bold text-green-500 mb-2">92%</div>
           <p className="text-gray-600">das conexões estão estáveis</p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Latência Média</h3>
             <Activity className="w-6 h-6 text-blue-500" />
@@ -64,7 +64,7 @@ const Dashboard: React.FC = () => {
           <div className="text-3xl font-bold text-blue-500 mb-2">42ms</div>
           <p className="text-gray-600">ping médio nacional</p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Reclamações</h3>
             <AlertTriangle className="w-6 h-6 text-yellow-500" />
@@ -74,7 +74,7 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border">
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200">
         <div className="p-6 border-b">
           <h2 className="text-xl font-semibold">Status por Estado</h2>
         </div>
@@ -83,7 +83,7 @@ const Dashboard: React.FC = () => {
             {Object.entries(statesData).map(([uf, data]) => (
               <div
                 key={uf}
-                className="border rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer"
+                className="border border-slate-200 rounded-lg p-4 hover:shadow-md transition-shadow cursor-pointer"
                 onClick={() => setSelectedState(uf)}
               >
                 <div className="flex items-center justify-between mb-3">
