@@ -40,7 +40,7 @@ const Testing: React.FC = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto p-6 space-y-8">
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Teste de Velocidade</h1>
         <p className="text-gray-600">Teste a velocidade da sua conexão em tempo real</p>
@@ -70,7 +70,7 @@ const Testing: React.FC = () => {
         </div>
 
         {results && (
-          <div className="bg-white rounded-xl shadow-sm border p-6">
+          <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
             <h3 className="text-xl font-semibold mb-6 text-center">Resultados</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               <div className="text-center p-4 bg-green-50 rounded-lg">

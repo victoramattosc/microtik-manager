@@ -49,14 +49,14 @@ const Alerts: React.FC = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto p-6 space-y-8">
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Alertas & Notificações</h1>
         <p className="text-gray-600">Central de notificações e configurações de alertas</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Alertas Críticos</h3>
             <XCircle className="w-6 h-6 text-red-500" />
@@ -66,7 +66,7 @@ const Alerts: React.FC = () => {
           </div>
           <p className="text-gray-600">requerem atenção imediata</p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Avisos</h3>
             <AlertTriangle className="w-6 h-6 text-yellow-500" />
@@ -76,7 +76,7 @@ const Alerts: React.FC = () => {
           </div>
           <p className="text-gray-600">alertas de média prioridade</p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm p-6 border">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-200">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-semibold">Informações</h3>
             <CheckCircle className="w-6 h-6 text-blue-500" />
@@ -88,7 +88,7 @@ const Alerts: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border mb-6">
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200 mb-6">
         <div className="p-6 border-b flex items-center justify-between">
           <h2 className="text-xl font-semibold">Notificações Recentes</h2>
           <button className="text-blue-600 hover:text-blue-800 text-sm">Marcar todas como lidas</button>
@@ -111,12 +111,12 @@ const Alerts: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border">
+      <div className="bg-white rounded-xl shadow-sm border border-slate-200">
         <div className="p-6 border-b">
           <h2 className="text-xl font-semibold">Configurações de Notificação</h2>
         </div>
         <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border rounded-lg p-4">
+          <div className="border border-slate-200 rounded-lg p-4">
             <div className="flex items-center mb-4">
               <MessageCircle className="w-6 h-6 text-green-600 mr-3" />
               <h3 className="font-semibold">Telegram</h3>
@@ -137,7 +137,7 @@ const Alerts: React.FC = () => {
               Configurar Bot
             </button>
           </div>
-          <div className="border rounded-lg p-4">
+          <div className="border border-slate-200 rounded-lg p-4">
             <div className="flex items-center mb-4">
               <Mail className="w-6 h-6 text-blue-600 mr-3" />
               <h3 className="font-semibold">Email</h3>
@@ -158,7 +158,7 @@ const Alerts: React.FC = () => {
               Configurar SMTP
             </button>
           </div>
-          <div className="border rounded-lg p-4">
+          <div className="border border-slate-200 rounded-lg p-4">
             <div className="flex items-center mb-4">
               <Phone className="w-6 h-6 text-purple-600 mr-3" />
               <h3 className="font-semibold">WhatsApp</h3>
