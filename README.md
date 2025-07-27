@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Backend
+
+A Django REST Framework backend lives in the `backend/` directory.  It exposes
+APIs for organisations, Mikrotik devices and their related data which are used
+by the React frontend.
+Install the dependencies and run the server with:
+
+```bash
+pip install -r backend/requirements.txt
+python backend/manage.py runserver
+```
+
+To load example data and create an example organisation run:
+
+```bash
+python backend/manage.py seed_data
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
