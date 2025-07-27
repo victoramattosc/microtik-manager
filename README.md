@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# MikroManager Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interface React simples para gerenciar dispositivos Mikrotik. O projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app) e utiliza **Tailwind CSS** para os estilos.
 
 ## Available Scripts
 
